@@ -20,3 +20,5 @@ function createUser(username, password) {
 
 const user1 = new createUser("ahsish", "1234");
 console.log(user1);
+
+// example 2
