@@ -7,5 +7,10 @@
 // prototype and __proto__ are different
 
 // prototype:
+// An object with shared methods/properties
 // Property of constructor function
 // Defines properties/methods to be inherited
+
+// __proto__ :
+// Points to the prototype of the constructor
+// A reference to another object
