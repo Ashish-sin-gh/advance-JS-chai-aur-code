@@ -1,5 +1,7 @@
 // getter and setters are special methods that are kept on a property
 
+// underscore(_) is used as a naming convention for private variable as JS dont have private property
+
 function User(email, password) {
   this._email = email;
   this._password = password;
