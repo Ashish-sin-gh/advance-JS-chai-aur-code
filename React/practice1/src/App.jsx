@@ -1,6 +1,7 @@
 import Child from "../components/Child";
 import MapHigherOrderFunction from "../components/MapHigherOrderFunction";
 import Parent from "../components/parent";
+import PlayButton from "../components/PlayButton";
 import Thumbnail from "../components/ThumbNail";
 
 function App() {
@@ -30,6 +31,12 @@ function App() {
           ></MapHigherOrderFunction>
         );
       })}
+      <PlayButton
+        onClick={() => console.log(`playing...${Math.random()}`)}
+      ></PlayButton>
+      <PlayButton
+        onClick={() => alert(`playing...${Math.random()}`)}
+      ></PlayButton>
     </>
   );
 }
