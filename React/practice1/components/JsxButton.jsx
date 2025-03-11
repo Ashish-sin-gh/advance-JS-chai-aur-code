@@ -1,7 +1,14 @@
-function JsxButton({ onClick, children }) {
+function JsxButton({ onPlay, onPause, children }) {
+  let playing = true;
+  function isPlaying() {
+    if (playing) onPlay();
+    else onPause();
+    playing = !playing;
+  }
+
   return (
     <>
-      <button onClick={onClick}>{children}</button>;
+      <button onClick={isPlaying}>{children}</button>;
     </>
   );
 }

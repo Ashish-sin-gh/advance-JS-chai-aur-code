@@ -1,7 +1,9 @@
 import Child from "../components/Child";
+import JsxButton from "../components/JsxButton";
 import MapHigherOrderFunction from "../components/MapHigherOrderFunction";
 import Parent from "../components/parent";
 import PlayButton from "../components/PlayButton";
+import StateUpdate from "../components/StateUpdate";
 import Thumbnail from "../components/ThumbNail";
 
 function App() {
@@ -31,12 +33,16 @@ function App() {
           ></MapHigherOrderFunction>
         );
       })}
-      <PlayButton
-        onClick={() => console.log(`playing...${Math.random()}`)}
-      ></PlayButton>
-      <PlayButton
+      <JsxButton
+        onPlay={() => console.log(`playing...${Math.random()}`)}
+        onPause={() => console.log("pause")}
+      >
+        play
+      </JsxButton>
+      {/* <PlayButton
         onClick={() => alert(`playing...${Math.random()}`)}
-      ></PlayButton>
+      ></PlayButton> */}
+      <StateUpdate></StateUpdate>
     </>
   );
 }
