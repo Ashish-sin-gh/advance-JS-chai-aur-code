@@ -19,8 +19,15 @@ function StateUpdate() {
 
     // updater function
     setNumber((number) => number + 1);
-    setNumber((number) => number + 1);
-    setNumber((number) => number + 1);
+    // setNumber((number) => number + 1);
+    // setNumber((number) => number + 1);
+
+    setTimeout(() => {
+      setNumber((number) => number + 1);
+      setNumber((number) => number + 1);
+      setNumber((number) => number + 1);
+    }, 5000);
+
     console.log(number); //snapshot
   }
 

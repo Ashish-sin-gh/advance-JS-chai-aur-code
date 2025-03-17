@@ -1,10 +1,13 @@
+import Chat from "../components/Chat";
 import Child from "../components/Child";
 import JsxButton from "../components/JsxButton";
+import ParentComp from "../components/lifting-the-state-up/parentComp";
 import MapHigherOrderFunction from "../components/MapHigherOrderFunction";
 import Parent from "../components/parent";
 import PlayButton from "../components/PlayButton";
 import StateUpdate from "../components/StateUpdate";
 import Thumbnail from "../components/ThumbNail";
+import UpdatingObjectsInState from "../components/UpdatingObjectsInState";
 
 function App() {
   const arr = [
@@ -43,6 +46,9 @@ function App() {
         onClick={() => alert(`playing...${Math.random()}`)}
       ></PlayButton> */}
       <StateUpdate></StateUpdate>
+      <Chat></Chat>
+      <UpdatingObjectsInState></UpdatingObjectsInState>
+      <ParentComp></ParentComp>
     </>
   );
 }
