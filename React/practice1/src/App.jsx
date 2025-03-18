@@ -1,6 +1,7 @@
 import Chat from "../components/Chat";
 import Child from "../components/Child";
 import JsxButton from "../components/JsxButton";
+import Parent2 from "../components/lifting-the-state-up/parent2";
 import ParentComp from "../components/lifting-the-state-up/parentComp";
 import MapHigherOrderFunction from "../components/MapHigherOrderFunction";
 import Parent from "../components/parent";
@@ -49,6 +50,7 @@ function App() {
       <Chat></Chat>
       <UpdatingObjectsInState></UpdatingObjectsInState>
       <ParentComp></ParentComp>
+      <Parent2></Parent2>
     </>
   );
 }
