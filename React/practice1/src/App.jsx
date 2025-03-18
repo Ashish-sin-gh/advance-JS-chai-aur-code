@@ -1,5 +1,6 @@
 import Chat from "../components/Chat";
 import Child from "../components/Child";
+import Form from "../components/filtered-list-program/Form";
 import JsxButton from "../components/JsxButton";
 import Parent2 from "../components/lifting-the-state-up/parent2";
 import ParentComp from "../components/lifting-the-state-up/parentComp";
@@ -51,6 +52,7 @@ function App() {
       <UpdatingObjectsInState></UpdatingObjectsInState>
       <ParentComp></ParentComp>
       <Parent2></Parent2>
+      <Form></Form>
     </>
   );
 }
