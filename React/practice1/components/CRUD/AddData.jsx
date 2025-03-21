@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-function AddData({ addData }) {
+function AddData({ addData, editableData, updateData }) {
   const [itemData, setItemData] = useState("");
 
   function handleChange(e) {
@@ -10,8 +10,18 @@ function AddData({ addData }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    addData(itemData);
+    if (editableData) {
+      updateData(itemData);
+    } else {
+      addData(itemData);
+    }
   }
+
+  useEffect(() => {
+    if (editableData) {
+      setItemData(editableData.item);
+    }
+  }, [editableData]);
 
   return (
     <>
