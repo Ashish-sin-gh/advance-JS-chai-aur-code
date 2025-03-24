@@ -1,5 +1,7 @@
 import Chat from "../components/Chat";
 import Child from "../components/Child";
+import AddItem from "../components/CRUD todo/AddItem";
+import ParentCrud from "../components/CRUD todo/ParentCrud";
 import CrudOp from "../components/CRUD/CrudOp";
 import Form from "../components/filtered-list-program/Form";
 import JsxButton from "../components/JsxButton";
@@ -55,6 +57,7 @@ function App() {
       <Parent2></Parent2>
       <Form></Form>
       <CrudOp></CrudOp>
+      <ParentCrud></ParentCrud>
     </>
   );
 }
