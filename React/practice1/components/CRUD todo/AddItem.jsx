@@ -6,18 +6,18 @@ function AddItem({ addItemToList, selectedItem, editedList }) {
 
   function handleKeyPress(e) {
     e.preventDefault();
-    setItem({ item: e.target.value });
+    setItem({ ...item, item: e.target.value });
     // console.log(item);
   }
 
   function handleSubmit(e) {
     e.preventDefault();
     if (selectedItem) {
-      editedList(item);
+      editedList({ ...selectedItem, item: item.item });
     } else {
       addItemToList(item);
     }
-    setItem("");
+    setItem({ item: "" });
     // console.log(item);
   }
 
