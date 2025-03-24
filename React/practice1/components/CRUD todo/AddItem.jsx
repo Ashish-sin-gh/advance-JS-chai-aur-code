@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-function AddItem({ addItemToList }) {
+function AddItem({ addItemToList, selectedItem, editedList }) {
+  //   console.log(selectedItem);
   const [item, setItem] = useState({ item: "" });
 
   function handleKeyPress(e) {
@@ -11,9 +12,19 @@ function AddItem({ addItemToList }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    addItemToList(item);
-    console.log(item);
+    if (selectedItem) {
+      editedList(item);
+    } else {
+      addItemToList(item);
+    }
+    setItem("");
+    // console.log(item);
   }
+
+  useEffect(() => {
+    console.log(selectedItem);
+    setItem(selectedItem);
+  }, [selectedItem]);
 
   return (
     <form onSubmit={handleSubmit}>
