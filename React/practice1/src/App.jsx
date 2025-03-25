@@ -1,5 +1,6 @@
 import Chat from "../components/Chat";
 import Child from "../components/Child";
+import ParentCrudReducer from "../components/CRUD todo with reducer/ParentCrudReducer";
 import AddItem from "../components/CRUD todo/AddItem";
 import ParentCrud from "../components/CRUD todo/ParentCrud";
 import CrudOp from "../components/CRUD/CrudOp";
@@ -58,6 +59,7 @@ function App() {
       <Form></Form>
       <CrudOp></CrudOp>
       <ParentCrud></ParentCrud>
+      <ParentCrudReducer></ParentCrudReducer>
     </>
   );
 }
