@@ -1,5 +1,6 @@
 import Chat from "../components/Chat";
 import Child from "../components/Child";
+import CounterUR from "../components/counterUsingUseReducer/CounterUR";
 import ParentCrudReducer from "../components/CRUD todo with reducer/ParentCrudReducer";
 import AddItem from "../components/CRUD todo/AddItem";
 import ParentCrud from "../components/CRUD todo/ParentCrud";
@@ -60,6 +61,9 @@ function App() {
       <CrudOp></CrudOp>
       <ParentCrud></ParentCrud>
       <ParentCrudReducer></ParentCrudReducer>
+      <br></br>
+      <br></br>
+      <CounterUR></CounterUR>
     </>
   );
 }
