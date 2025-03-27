@@ -1,12 +1,19 @@
-# React + Vite
+# React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## useContext hook
 
-Currently, two official plugins are available:
+Context lets the parent component make some information available to any component in the tree below it.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+`Context lets a parent component provide data to the entire tree below it`
 
-## Expanding the ESLint configuration
+### way for a child to “ask” for data from somewhere above in the tree.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+You can’t do it with props alone. This is where context comes into play.
+
+You will do it in three steps:
+
+1. Create a context.
+2. Use that context from the component that needs the data.
+3. Provide that context from the component that specifies the data.
+
+`useContext tells React that the Heading component wants to read the LevelContext.`

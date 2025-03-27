@@ -1,5 +1,6 @@
 import Chat from "../components/Chat";
 import Child from "../components/Child";
+import ContextEx from "../components/ContextExample/ContextEx";
 import CounterUR from "../components/counterUsingUseReducer/CounterUR";
 import ParentCrudReducer from "../components/CRUD todo with reducer/ParentCrudReducer";
 import AddItem from "../components/CRUD todo/AddItem";
@@ -64,6 +65,7 @@ function App() {
       <br></br>
       <br></br>
       <CounterUR></CounterUR>
+      <ContextEx></ContextEx>
     </>
   );
 }

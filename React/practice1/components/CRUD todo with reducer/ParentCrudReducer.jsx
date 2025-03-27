@@ -32,6 +32,8 @@ function ParentCrudReducer() {
   const [selectedItem, setSelectedItem] = useState(null);
 
   function addItemToList(item) {
+    // this function is just calling the dispatch so we dont need this function, we can directly send dispatch as prop in a component
+
     // setItemList([...itemList, { item: item.item, id: itemList.length + 1 }]);
     dispath({
       type: "ADD",
