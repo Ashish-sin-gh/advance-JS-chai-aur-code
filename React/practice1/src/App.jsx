@@ -1,5 +1,7 @@
+import { useContext } from "react";
 import Chat from "../components/Chat";
 import Child from "../components/Child";
+import ThemeButton from "../components/ContextEx2/ThemeToggler";
 import ContextEx from "../components/ContextExample/ContextEx";
 import CounterUR from "../components/counterUsingUseReducer/CounterUR";
 import ParentCrudReducer from "../components/CRUD todo with reducer/ParentCrudReducer";
@@ -16,6 +18,8 @@ import PlayButton from "../components/PlayButton";
 import StateUpdate from "../components/StateUpdate";
 import Thumbnail from "../components/ThumbNail";
 import UpdatingObjectsInState from "../components/UpdatingObjectsInState";
+// import ThemeContext from "../components/ContextEx2/ThemeContext";
+import ParentRCCH from "../components/reducer-context-customHook-together/ParentRCCH";
 
 function App() {
   const arr = [
@@ -66,6 +70,10 @@ function App() {
       <br></br>
       <CounterUR></CounterUR>
       <ContextEx></ContextEx>
+
+      <ThemeButton></ThemeButton>
+
+      <ParentRCCH></ParentRCCH>
     </>
   );
 }
