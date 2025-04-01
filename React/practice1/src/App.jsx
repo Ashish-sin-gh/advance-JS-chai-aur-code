@@ -20,6 +20,7 @@ import Thumbnail from "../components/ThumbNail";
 import UpdatingObjectsInState from "../components/UpdatingObjectsInState";
 // import ThemeContext from "../components/ContextEx2/ThemeContext";
 import ParentRCCH from "../components/reducer-context-customHook-together/ParentRCCH";
+import RefForFocus from "../components/focusing a text inpu/RefForFocus";
 
 function App() {
   const arr = [
@@ -74,6 +75,8 @@ function App() {
       <ThemeButton></ThemeButton>
 
       <ParentRCCH></ParentRCCH>
+
+      <RefForFocus></RefForFocus>
     </>
   );
 }
