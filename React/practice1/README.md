@@ -45,3 +45,20 @@ The value of useRef is mutable.
    `const myref = useRef(null)`
 
    `<div ref={myref}`
+
+## useEffect
+
+Effect let you run some code after rending so that you can synchronize your component with some system outside of react.
+
+Two type of logic inside react components:
+
+- **Rendering code**:
+  lives at the top level of your component.
+  returns JSX.
+  rendering code must be pure.(`calculate` and return the result)
+
+  > pure component- if prop state and context is same - output will be same.
+
+- **Event Handlers**: nested function inside a component that do things rather than calculate them.
+
+  event handlers contains `side effects` (change the program state) caused by specific user action
