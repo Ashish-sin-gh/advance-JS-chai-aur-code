@@ -4,8 +4,8 @@ function RefForFocus() {
   const focusedRef = useRef(null);
 
   useEffect(() => {
+    // focusedRef.current.focus();
     focusedRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
-    focusedRef.current.focus();
   }, []);
   return (
     <form>

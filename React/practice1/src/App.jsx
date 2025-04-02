@@ -21,6 +21,7 @@ import UpdatingObjectsInState from "../components/UpdatingObjectsInState";
 // import ThemeContext from "../components/ContextEx2/ThemeContext";
 import ParentRCCH from "../components/reducer-context-customHook-together/ParentRCCH";
 import RefForFocus from "../components/focusing a text input/RefForFocus";
+import DataFetch from "../components/useEffect'sEffect/DataFetch";
 
 function App() {
   const arr = [
@@ -77,6 +78,8 @@ function App() {
       <ParentRCCH></ParentRCCH>
 
       <RefForFocus></RefForFocus>
+      <br />
+      <DataFetch />
     </>
   );
 }
