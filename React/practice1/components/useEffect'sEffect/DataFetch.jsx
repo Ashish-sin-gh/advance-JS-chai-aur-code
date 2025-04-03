@@ -27,7 +27,11 @@ function DataFetch() {
         <ul>
           {data.map((el) => {
             console.log(el.id);
-            return <li key={el.id}>{`${el.first_name} ${el.last_name}`}</li>;
+            return (
+              <li
+                key={el.id}
+              >{`${el.first_name} ${el.last_name} ${el.ip_address}`}</li>
+            );
           })}
         </ul>
       )}

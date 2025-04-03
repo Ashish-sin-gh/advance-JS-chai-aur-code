@@ -48,6 +48,10 @@ The value of useRef is mutable.
 
 ## useEffect
 
+### Component Life Cycle:
+
+![component life cycle image](https://cdn-media-1.freecodecamp.org/images/1*_drMYY_IEgboMS4RhvC-lQ.png)
+
 Effect let you run some code after rending so that you can synchronize your component with some system outside of react.
 
 Two type of logic inside react components:
@@ -62,3 +66,13 @@ Two type of logic inside react components:
 - **Event Handlers**: nested function inside a component that do things rather than calculate them.
 
   event handlers contains `side effects` (change the program state) caused by specific user action
+
+## useMemo()
+
+### Memoisation
+
+It is basically storing a result of a calculation for future use in the program.
+
+used to tackle expensive operation in the program.
+
+`use in Dynamic programming`
