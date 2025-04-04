@@ -18,6 +18,7 @@ function ExpensiveTask() {
   }, [inputVal]);
   return (
     <div style={{ border: "1px,solid,black", margin: "10px", padding: "10px" }}>
+      <h2>useMemo</h2>
       <button onClick={handleButtonClick}>click</button>
       <h2>{counter}</h2>
       <input

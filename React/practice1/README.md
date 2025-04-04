@@ -71,8 +71,35 @@ Two type of logic inside react components:
 
 ### Memoisation
 
-It is basically storing a result of a calculation for future use in the program.
+It is basically storing/cacheing a result of a calculation for future use in the program.
 
 used to tackle expensive operation in the program.
 
 `use in Dynamic programming`
+
+## useCallback()
+
+used to `cache` a function.
+
+The main use of it is to stop the unnecessary re-render of a `child component` that just use a function that is received as a `prop`.
+
+When a child component is re-rended unnecessarily- stop this by using React.memo
+
+```
+import React from 'react'
+
+const ChildComponent = React.memo(
+  (props) => {
+
+    console.log("Child Component go re-rendered again");
+
+    return (
+      <div>
+        <button>
+          {props.buttonName}
+        </button>
+      </div>
+    )
+  }
+);
+```

@@ -23,6 +23,7 @@ import ParentRCCH from "../components/reducer-context-customHook-together/Parent
 import RefForFocus from "../components/focusing a text input/RefForFocus";
 import DataFetch from "../components/useEffect'sEffect/DataFetch";
 import ExpensiveTask from "../components/useMemo/ExpensiveTask";
+import ParentUCB from "../components/useCallback/Example1/parentUCB";
 
 function App() {
   const arr = [
@@ -83,6 +84,8 @@ function App() {
       <DataFetch />
       <br />
       <ExpensiveTask />
+      <br />
+      <ParentUCB />
     </>
   );
 }
