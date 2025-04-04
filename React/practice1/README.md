@@ -81,9 +81,9 @@ used to tackle expensive operation in the program.
 
 used to `cache` a function.
 
-The main use of it is to stop the unnecessary re-render of a `child component` that just use a function that is received as a `prop`.
+#### One use of it is to stop the unnecessary re-render of a `child component` that just use a function that is received as a `prop`.
 
-When a child component is re-rended unnecessarily- stop this by using React.memo
+When a child component is re-rended unnecessarily- stop this by using `React.memo`
 
 ```
 import React from 'react'
@@ -103,3 +103,19 @@ const ChildComponent = React.memo(
   }
 );
 ```
+
+`React.memo` dont work with function send as prop i.e., it will only re-render when a variable prop is send and that prop is updated.
+
+when an function is send as prop and is updated in future, React.memo wont stop the re-render and component wrapped in React.memo will be re-rendered.
+
+### why?
+
+The reason for this to happen is when-ever a parent component is re-rendered and a child component has a function passed as a prop, then this child component will also re-render coz a new `function reference` will be created.
+
+> Whenever a component is re-rendered, all its functions are re-created with a new reference
+
+`useCallback()` is used to stop the re-creation of a function on re-render of a component holding that function.
+
+#### Other use of useCallback is to handle expensive operation efficiently.
+
+used for large scale program.
